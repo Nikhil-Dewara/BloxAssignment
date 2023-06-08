@@ -1,0 +1,65 @@
+Q6-: Banking works by transferring money from account A to account B. Most of the time account A is in one bank while account B is another bank.
+
+Suppose someone writes an implementation for such a money transfer.
+1.) What are the test cases?
+2.) What are the issues in such a system?
+3.) What can we do to mitigate some of the issues ?
+
+
+Solution -: 
+Q 1). Based on our solution, here are some possible test cases that are consider for testing the BankAccount class and the transfer_funds function:
+
+For BankAccount Class: 
+-Test account initialization - Verify that the account number and balance are correctly assigned.
+
+-Test withdrawal- Verify that the balance is updated correctly after each withdrawal.
+
+-Test deposit - Verify that the balance is updated correctly after each deposit.
+
+For the transfer_funds function:
+-Test successful transfer - Verify that the transfer is successful (function returns True) and the account balances are updated correctly
+
+-Test unsuccessful transfer due to insufficient balance - Verify that the transfer is unsuccessful (function returns False) and the account balances remain unchanged.
+
+-Test unsuccessful transfer due to invalid account numbers - Verify that the transfer is unsuccessful (function returns False) and the account balances remain unchanged.
+
+-Test edge cases - Verify that the transfer is successful and the account balances are updated correctly.
+
+Q 2). There are lots of Issues face by our system such as :-
+
+-Incomplete Error Handling
+-Absence of Transaction Limits and Restrictions
+-Lack of Authentication and Security
+-Concurrency Issues
+
+Q 3). To mitigate some of the issues identified in the system, we have to take some actions :-
+
+- For Error Handling we provide meaningful error messages to users, ensuring they understand what went wrong and how to resolve the issue.Even we can implement comprehensive error handling mechanisms throughout the system to capture and handle various error scenarios.
+
+- For Transaction Limits and Restrictions we define and enforce transaction limits and restrictions, such as daily withdrawal limits, maximum transfer amounts, or transaction frequency limits
+
+- For Authentication and Security we can implement a robust authentication system to verify the identity of users accessing the system. This can include mechanisms like username/password authentication, multi-factor authentication, or biometric authentication.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

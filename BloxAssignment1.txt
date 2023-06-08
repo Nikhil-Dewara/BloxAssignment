@@ -1,0 +1,36 @@
+Q1 .Elaborate how you tested your internship or academic projects. 
+a) What did the system used to do?
+b) What other systems have you seen in the wild like that?
+c) How do you approach the testing problem?
+d) What were interesting bugs?
+e) How did you fix them?
+
+
+
+Solution -: Our team created Final Year Project That is Admissions Management System . 
+The entire testing process for a react app involves unit testing, component testing, end-to-end testing, and cross browser compatibility testing.
+The React Testing Library is a lightweight solution to DOM testing. For react applications, it is quite useful for testing components and testing how they would function in front of real users. Enzyme is another testing framework that can be used for component testing of React Apps like React Testing Library. However, the only difference between the two frameworks is that while Enzyme tests the implementation of components, React Testing Library tests the behavior of the components. Hence, React Testing Library is recommended for Component Testing of React Apps.
+Jest is the testing framework recommended in the official docs for testing the react applications. In this example, Jest framework is used to test the component, created for the sample react application. All the tests should be written in a separate test.js file. Jest will automatically detect the files with the extension .test.js. Using BrowserStack’s Real Device cloud can be beneficial both in terms of wide coverage and cost-effectiveness. Testing your React Application on 3000+ device-browser combinations can help understand the end-user experience and any related issues.Cross Browser Compatibility is one of the major aspects of End to End Testing, wherein an app is tested on different devices and browser versions to check its compatibility and consistency.
+
+A . The college management system is a simple React project for managing the student and teacher information. This is a mini project and is simple to use. To support the user to store the data, Firebase  is used. You can simply store the details and you can review them. Make sure you have nodejs on your machine to run the project.
+
+B. You can generate a static site with React using tools like Gatsby. You can use React Native to build mobile apps. You can even create Desktop applications using a tool like Electron, which can run on mac and windows with React.js technology.React also supports server rendering of its components using tools like Next.js. You can also use React.js to create a virtual reality website and 360 experiences using React VR.
+
+C  .First we Identify the features which add more business value to your application and carry out testing. So, consider that area as a prioritized feature to test.Execute border case/edge case scenarios in those high valued features.Identify the most used React components in your application and test those. If your application serves a large user base,  ensure to test the application for stress and performance load.Include the testing scope for basic React component testing, which includes: User interactions with the components, such as OnClick or OnSubmit eventsConditional renderings such as impact due to State changes or Prop changes.React hooks (if hooks are defined in your React apps)
+
+  D. the following error messages:
+Warning: Each child in a list should have a unique key prop
+Prevent usage of Array index in keys
+React Hook useXXX is called conditionally. React Hooks must be called in the exact same order in every component render
+React Hook has a missing dependency: ‘XXX’. Either include it or remove the dependency array
+Can’t perform a React state update on an unmounted component
+Too many re-renders. React limits the number of renders to prevent an infinite loop
+Objects are not valid as a React child / Functions are not valid as a React child
+Adjacent JSX elements must be wrapped in an enclosing tag
+
+E . The idea is to keep a variable id that stores the id of the Bugs that are registered till now. There are mainly three options out of which user can select the functionality:
+Identifying the root cause
+Create New Bug
+Change Status of Bug
+Report a Bug
+Exit
